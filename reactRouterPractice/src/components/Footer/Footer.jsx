@@ -2,7 +2,19 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div>Footer</div>
+    <>
+    <hr />
+    <div>
+      <div>Logo</div>
+      <div>
+        <div>
+          <div></div>
+        </div>
+        <div>Follow Us</div>
+        <div>Legal</div>
+      </div>
+    </div>
+    </>
   )
 }
 

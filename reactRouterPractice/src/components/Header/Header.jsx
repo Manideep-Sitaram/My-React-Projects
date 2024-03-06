@@ -2,7 +2,8 @@ import React from "react";
 import { NavLink, Link } from "react-router-dom";
 function Header() {
   return (
-    <nav className="mx-auto px-5 py-4 bg-white flex flex-wrap justify-between mb-4 border-1 w-full items-center">
+    <>
+    <nav className="mx-auto px-5 py-4 bg-white flex flex-wrap justify-between w-full items-center">
       <div className = "w-40 ml-12">
         <img src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png" alt="logo" />
       </div>
@@ -53,6 +54,8 @@ function Header() {
         <button className = "px-3 py-2 text-white font-semibold bg-orange-700 hover:bg-orange-900 rounded-lg">Get started</button>
       </div>
     </nav>
+    <hr />
+    </>
   );
 }
 

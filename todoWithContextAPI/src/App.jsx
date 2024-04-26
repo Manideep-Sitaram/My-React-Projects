@@ -4,24 +4,25 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { TodoContextProvider } from '../context'
 import TodoForm from './components/TodoForm'
+import TodoItem from './components/TodoItem'
 
 function App() {
   
   const [todos, setTodos] = useState([]);
 
-  function addTodo(todoItem){
-    setTodos([...todos, {id : Date.now(), todoItem : todoItem, completed : false}])
+  function addTodo(todo){
+    setTodos([...todos, {id : Date.now(), todo, completed : false}])
   }
 
-  function editTodo(){
-
-  }
-
-  function deleteTodo(){
+  function editTodo(id, todo){
 
   }
 
-  function toggleTodo(){
+  function deleteTodo(id){
+
+  }
+
+  function toggleTodo(id){
 
   }
 
@@ -35,7 +36,9 @@ function App() {
                        <TodoForm />
                     </div>
                     <div className="flex flex-wrap gap-y-3">
-                        {/*Loop and Add TodoItem here */}
+                        {todos.map((todo) => (
+                          <TodoItem todo={todo} />
+                        ))}
                     </div>
                     {console.log(todos.length)}
                 </div>

@@ -34,6 +34,6 @@ const anotherElement = (
 ReactDOM.createRoot(document.getElementById('root')).render(
     // MyApp()
     // <MyApp />
-    // anotherElement
-    customReactElement
+    anotherElement
+    // customReactElement
 )
